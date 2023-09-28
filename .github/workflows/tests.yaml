@@ -1,5 +1,3 @@
-name: Run Tests
-
 on:
   push:
     branches:
@@ -15,8 +13,10 @@ jobs:
         with:
           python-version: '3.x'
 
-      
+      - name: Checkout code
+        uses: actions/checkout@v2
+
       - name: Run Tests
         run: |
           python test.py
-        working-directory: https://github.com/Caburke1218/Github-Actions-and-Backend-Web-Development.git
+        working-directory: ./  
