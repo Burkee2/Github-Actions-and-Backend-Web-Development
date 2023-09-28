@@ -18,6 +18,11 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
+      - name: Install dependencies
+        run: |
+          cd Project  
+          pip install flask
+
       - name: Run Tests
         run: |
           cd Project  
