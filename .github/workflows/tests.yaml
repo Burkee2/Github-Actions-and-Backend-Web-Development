@@ -20,5 +20,5 @@ jobs:
 
       - name: Run Tests
         run: |
-          cd project  
+          cd Project  
           python test.py
